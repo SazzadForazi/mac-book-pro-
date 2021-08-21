@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Tailwindcss and fonts -->
+  <link rel="stylesheet" href="stylesheets/tailwind.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet" />
+  <title>mackbook</title>
+</head>
+
+<body>
+  <main>
+    <div class="container mx-auto px-4 md:px-2">
+      <div class="grid grid-cols-2">
+        <!-- Image -->
+        <div class="p-5 m-5">
+          <div class="h-auto w-auto">
+            <img src="images/mac.png" alt="" />
+          </div>
+        </div>
+
+
+        <!-- Options -->
+        <div class="mt-10 max-w-lg mx-auto">
+          <h3 class="text-3xl mt-5 font-medium pb-2">Customize your Blue 24-inch iMac eith Apple M1 chip</h3>
+          <p>Apple Inc. is an American multinational technology company that specializes in consumer electronics,
+            computer software, and online services. Apple is the world's largest technology company by revenue and,
+            since January 2021</p>
+          <br><br>
+          <h4 class="text-lg font-semibold ">Memory</h4>
+          <div class="pt-4">
+            <button id="first-memory" class="px-8 py-2 border border-gray-300 shadow hover:shadow-lg rounded">8GB
+              unified
+              <br>
+              memory</button>
+            <button id="second-memory" class="px-8 py-2 border border-gray-300 shadow hover:shadow-lg rounded">16GB
+              unified
+              <br>
+              memory</button>
+          </div>
+
+
+          <h4 class="text-lg font-semibold pt-4">Storage</h4>
+          <div class="pt-4">
+            <button id="first-storage" class="px-8 py-2 border border-gray-300 shadow hover:shadow-lg rounded">256GB SSD
+              <br>
+              storage</button>
+            <button id="second-storage" class="px-8 py-2 border border-gray-300 shadow hover:shadow-lg rounded">512GB
+              SSD
+              <br>
+              storage</button>
+            <button id="third-storage" class="px-8 py-2 border border-gray-300 shadow hover:shadow-lg rounded">1TB SSD
+              <br>
+              storage</button>
+          </div>
+
+
+          <h4 class="text-lg font-semibold pt-4">Choose your delivery option</h4>
+          <div class="pt-4">
+            <button id="first-delivery"
+              class="px-8 py-2 border border-gray-300 shadow hover:shadow-lg rounded">Friday.Aug 25
+              <br>
+              Free
+              prime
+              Delivery</button>
+            <button id="second-delivery"
+              class="px-8 py-2 border border-gray-300 shadow hover:shadow-lg rounded">Friday,Aug 21
+              <br>
+              Delivery charge $20</button>
+          </div>
+
+          <section class="m-4">
+            <table class="font-bold">
+              <thead>
+                <tr>
+                  <td class="w-3/4 p-4 border border-gray-300 shadow hover:shadow-lg rounded">Best price</td>
+                  <td class="w-3/4 p-4 border border-gray-300 shadow hover:shadow-lg rounded">$1299</td>
+                </tr>
+                <tr>
+                  <td class="w-3/4 p-4 border border-gray-300 shadow hover:shadow-lg rounded">Extra Memory Cost</td>
+                  <td class="w-3/4 p-4 border border-gray-300 shadow hover:shadow-lg rounded">$ <span
+                      id="memoryCost">0</span></td>
+                </tr>
+                <tr>
+                  <td class="w-3/4 p-4 border border-gray-300 shadow hover:shadow-lg rounded">Extra Storage Cost</td>
+                  <td class="w-3/4 p-4 border border-gray-300 shadow hover:shadow-lg rounded">$ <span
+                      id="extra-memoryCost">0</span> </td>
+                </tr>
+                <tr>
+                  <td class="w-3/4 p-4 border border-gray-300 shadow hover:shadow-lg rounded">Delivery Charge</td>
+                  <td class="w-3/4 p-4 border border-gray-300 shadow hover:shadow-lg rounded">$ <span
+                      id="delivery-charge">0</span> </td>
+                </tr>
+
+                <tr>
+                  <td class="w-3/4 p-4 border border-gray-300 shadow hover:shadow-lg rounded">Total Price</td>
+                  <td class="w-3/4 p-4 border border-gray-300 shadow hover:shadow-lg rounded">$ <span
+                      id="total-price">1299</span> </td>
+                </tr>
+
+
+              </thead>
+
+            </table>
+          </section>
+          <section>
+            <h4>Add promo Code</h4>
+            <input id="promo-input" class="px-2 border border-gray-300" type="text">
+            <button id="coupon" class="px-3 py-2 border bg-red-600 rounded-md font-bold text-white">Apply</button>
+
+          </section>
+
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+  <footer class="mt-8">
+    <hr>
+
+    <div>
+      <h1 class="text-5xl text-center font-extrabold mb-8">Total:$<span id="total-amount">1299</span></h1>
+    </div>
+  </footer>
+  <!-- Custom js -->
+  <script src="main.js"></script>
+</body>
+
+</html>
